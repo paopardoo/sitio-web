@@ -1,0 +1,131 @@
+  body {
+    margin: 0;
+    font-family: Courier, monospace;
+    font-weight: bold;
+    font-size: 20px;
+    padding: 50;
+  }
+
+  .container-nav {
+    display: flex;
+    padding: 10px;
+    height: 50px;
+    background-color: black;
+  }
+  
+  
+  .navbar {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+  }
+  
+  
+  .brand {
+    display: flex;
+    align-items: center;
+  }
+  
+  
+  li>a {
+    padding: 8px 24px;
+  }
+  
+  
+  li {
+    list-style-type: none;
+  }
+  
+  
+  a {
+    color: powderblue;
+    text-decoration:none;
+  }
+  
+  
+  .nav-links {
+    display: flex;
+    align-items: center;
+  }
+  
+  
+  .button-menu-toggle {
+    display: none;
+  }
+  
+  .image-slider {
+    display: flex;
+    width: 100vw;
+    height: 600px;
+    background-color: peachpuff;
+    position: relative;
+    overflow-x: scroll;
+    scroll-snap-type: x mandatory;
+    justify-content: center;
+    align-items: stretch;
+  }
+  
+  .image-slider img {
+    scroll-snap-align: start;
+    max-width: 90%;
+    max-height: 90%;
+    display: none;
+  }
+
+  .image-slider img.active {
+    display: block;
+  }
+
+  .slider-controls {
+    position: absolute;
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    padding: 10px;
+  }
+
+  .slider-controls button {
+    margin: 0 5px;
+  }
+
+  .slider-controls #prevButton {
+    left: 0;
+  }
+  
+  .slider-controls #nextButton {
+    right: 0;
+  }
+
+  .button-slider {
+    border: none;
+    height: 100%;
+    width: 10%;
+    background-color: transparent;
+    font-size: 60px;
+  }
+
+  .button-slider:hover {
+    background-color: rgba(255, 255, 255, 0.5);
+  }
+
+  .gallery-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+  }
+  
+  .gallery-container img {
+    max-width: 200px;
+    max-height: 200px;
+    margin: 20px;
+  }
+
+  .toggle-button {
+    top: 10px;
+    right: 10px;
+    padding: 10px;
+    background-color: #f0f0f0;
+    border: none;
+    cursor: pointer;
+  }
